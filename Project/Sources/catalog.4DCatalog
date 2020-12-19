@@ -1,0 +1,5 @@
+﻿<?xml version="1.0" encoding="UTF-8"?>
+<!DOCTYPE base SYSTEM "http://www.4d.com/dtd/2007/base.dtd" >
+<base name="msTeamsInside4dWebArea" uuid="E63FEEF8E36849BDB69BE0056D9E8CF4" collation_locale="de">
+	<schema name="DEFAULT_SCHEMA"/>
+</base>

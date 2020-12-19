@@ -1,0 +1,217 @@
+﻿{
+	"$4d": {
+		"version": "1",
+		"kind": "form"
+	},
+	"windowSizingX": "variable",
+	"windowSizingY": "variable",
+	"windowMinWidth": 600,
+	"windowMinHeight": 500,
+	"windowMaxWidth": 32767,
+	"windowMaxHeight": 32767,
+	"rightMargin": 20,
+	"bottomMargin": 20,
+	"events": [
+		"onLoad",
+		"onPageChange",
+		"onValidate",
+		"onClick",
+		"onDoubleClick",
+		"onOutsideCall",
+		"onBeginDragOver",
+		"onDragOver",
+		"onDrop",
+		"onAfterKeystroke",
+		"onMenuSelect",
+		"onPluginArea",
+		"onAfterEdit",
+		"onTimer",
+		"onBoundVariableChange"
+	],
+	"windowTitle": "window title",
+	"destination": "detailScreen",
+	"pages": [
+		{
+			"objects": {
+				"oBtnTrace": {
+					"type": "button",
+					"text": "#",
+					"top": 1,
+					"left": 821,
+					"width": 27,
+					"height": 24,
+					"events": [
+						"onClick"
+					],
+					"fontWeight": "bold",
+					"fontSize": 18,
+					"stroke": "#da70d6",
+					"tooltip": "Cancel",
+					"method": "ObjectMethods/oBtnTrace.4dm",
+					"sizingX": "move"
+				},
+				"oBtnCancel": {
+					"type": "button",
+					"text": "✗",
+					"top": 1,
+					"left": 854,
+					"width": 27,
+					"height": 24,
+					"events": [
+						"onClick"
+					],
+					"fontWeight": "bold",
+					"fontSize": 18,
+					"stroke": "#dc143c",
+					"tooltip": "Close",
+					"method": "ObjectMethods/oBtnCancel.4dm",
+					"shortcutAccel": false,
+					"shortcutControl": false,
+					"shortcutShift": false,
+					"shortcutAlt": false,
+					"shortcutKey": "[Esc]",
+					"sizingX": "move"
+				}
+			}
+		},
+		{
+			"objects": {
+				"Schaltfläche": {
+					"type": "button",
+					"text": "Button",
+					"top": 1,
+					"left": 0,
+					"width": 95,
+					"height": 23,
+					"events": [
+						"onClick"
+					],
+					"method": "ObjectMethods/Schaltfläche.4dm",
+					"focusable": false
+				},
+				"oWebArea": {
+					"type": "webArea",
+					"left": 260,
+					"top": 30,
+					"width": 621,
+					"height": 610,
+					"method": "ObjectMethods/oWebArea.4dm",
+					"webEngine": "embedded",
+					"dataSource": "gWebArea",
+					"methodsAccessibility": "all",
+					"sizingX": "grow",
+					"sizingY": "grow",
+					"borderStyle": "double",
+					"events": [
+						"onLoad",
+						"onUnload",
+						"onBeginURLLoading",
+						"onURLResourceLoading",
+						"onEndURLLoading",
+						"onURLLoadingError",
+						"onURLFiltering",
+						"onOpenExternalLink",
+						"onWindowOpeningDenied"
+					]
+				},
+				"oCurrPageUrl": {
+					"type": "input",
+					"left": 462,
+					"top": 4,
+					"width": 351,
+					"height": 17,
+					"enterable": false,
+					"contextMenu": "none",
+					"fill": "transparent",
+					"placeholder": "current page url",
+					"dataSource": "Form:C1466.currUrl",
+					"sizingX": "grow",
+					"borderStyle": "dotted"
+				},
+				"oCurrPageTitle": {
+					"type": "input",
+					"left": 110,
+					"top": 4,
+					"width": 344,
+					"height": 17,
+					"enterable": false,
+					"contextMenu": "none",
+					"fill": "transparent",
+					"placeholder": "current page title",
+					"dataSource": "Form:C1466.currPageTitle",
+					"borderStyle": "dotted",
+					"textAlign": "center"
+				},
+				"List Box": {
+					"type": "listbox",
+					"left": 6,
+					"top": 30,
+					"width": 239,
+					"height": 610,
+					"events": [
+						"onClick",
+						"onHeaderClick",
+						"onDataChange",
+						"onSelectionChange"
+					],
+					"sizingX": "grow",
+					"sizingY": "grow",
+					"resizingMode": "legacy",
+					"listboxType": "collection",
+					"dataSource": "Form:C1466.colPageContents",
+					"rowHeight": "2em",
+					"columns": [
+						{
+							"header": {
+								"text": "typ",
+								"name": "oHeadTyp"
+							},
+							"name": "oColTyp",
+							"footer": {
+								"name": "Fußteil1"
+							},
+							"width": 66,
+							"minWidth": 66,
+							"maxWidth": 66,
+							"dataSource": "This:C1470.typ",
+							"verticalAlign": "middle",
+							"truncateMode": "none",
+							"wordwrap": "normal"
+						},
+						{
+							"header": {
+								"name": "oHeadContent",
+								"text": "content"
+							},
+							"name": "oColContent",
+							"footer": {
+								"name": "Fußteil2"
+							},
+							"dataSource": "This:C1470.content",
+							"verticalAlign": "middle",
+							"truncateMode": "none",
+							"wordwrap": "normal"
+						}
+					]
+				},
+				"Splitter": {
+					"type": "splitter",
+					"left": 251,
+					"top": 29,
+					"width": 3,
+					"height": 612,
+					"sizingY": "grow"
+				}
+			}
+		}
+	],
+	"geometryStamp": 254,
+	"editor": {
+		"activeView": "View 1",
+		"defaultView": "View 1",
+		"views": {
+			"View 1": {}
+		}
+	},
+	"method": "method.4dm"
+}
